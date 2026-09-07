@@ -6,5 +6,5 @@ Useful links:
 This is totaly cool
 
 ## Formatting Examples:
-1. *Italic* text.
-2. **Bold** Text.
+1. *Italic* Noice.
+2. **Bold** more Noice.
