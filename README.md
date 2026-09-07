@@ -12,6 +12,9 @@ Useful links:
 - touch (filename) | makes a new file
 - rm (filename) | removes a file
 - rm -r (folder name) | removes a folder
+- dotnet new console | makes the tings needed to run a c# program (unsure how it works)
+- dotnet build | makes the code into machine code so the program works (unsure)
+- dotnet run | runs the c# program from the build that was made
 
 ## git commands
 - git log --all --oneline --graph | gives a nice overview of the timeline
