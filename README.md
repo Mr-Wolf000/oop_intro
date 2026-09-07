@@ -19,7 +19,7 @@ This is totaly cool
 - rm (filename) | removes a file
 - rm -r (folder name) | removes a folder
 
-# git commands
+## git commands
 - git log --all --oneline --graph | gives a nice overview of the timeline
 - git add (folder) | adds folder to the git
 - git commit -a -m "(comment)" | adds all to working tree with comment
