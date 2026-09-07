@@ -20,7 +20,7 @@ Useful links:
 - git push | uploads the new version to github
 - git merge | will merge your code *(think of it mostly as going to the newest version after fetch)*
 - git fetch | cheks if own version is up to date, if not will get newest version and need to merge.
-- 
+
 # new things
 This is totaly cool
 
