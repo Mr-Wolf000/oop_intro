@@ -1,0 +1,15 @@
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\bin\Debug\net10.0\opg5.8.exe
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\bin\Debug\net10.0\opg5.8.deps.json
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\bin\Debug\net10.0\opg5.8.runtimeconfig.json
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\bin\Debug\net10.0\opg5.8.dll
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\bin\Debug\net10.0\opg5.8.pdb
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\opg5.8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\opg5.8.AssemblyInfoInputs.cache
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\opg5.8.AssemblyInfo.cs
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\opg5.8.csproj.CoreCompileInputs.cache
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\opg5.8.sourcelink.json
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\opg5.8.dll
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\refint\opg5.8.dll
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\opg5.8.pdb
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\opg5.8.genruntimeconfig.cache
+C:\Users\Gamer\Desktop\Hobbycode\oop_intro\chapter5\opg5.8\obj\Debug\net10.0\ref\opg5.8.dll
