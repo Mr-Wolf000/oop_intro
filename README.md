@@ -22,3 +22,4 @@ This is totaly cool
 - git fetch - cheks if own version is up to date, if not will get newest version and need to merge.
 - rm (filename) - removes a file
 - rm -r (folder name) - removes a folder
+- git log --all --oneline --graph - gives a nice overview of the timeline
