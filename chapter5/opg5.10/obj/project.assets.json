@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.3\\opg5.3.csproj",
-      "projectName": "opg5.3",
-      "projectPath": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.3\\opg5.3.csproj",
+      "projectUniqueName": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.10\\opg5.10.csproj",
+      "projectName": "opg5.10",
+      "projectPath": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.10\\opg5.10.csproj",
       "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.3\\obj\\",
+      "outputPath": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.10\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config"
