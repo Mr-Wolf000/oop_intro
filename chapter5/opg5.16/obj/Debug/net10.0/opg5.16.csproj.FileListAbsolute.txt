@@ -1,0 +1,15 @@
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\bin\Debug\net10.0\opg5.16.exe
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\bin\Debug\net10.0\opg5.16.deps.json
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\bin\Debug\net10.0\opg5.16.runtimeconfig.json
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\bin\Debug\net10.0\opg5.16.dll
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\bin\Debug\net10.0\opg5.16.pdb
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\opg5.16.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\opg5.16.AssemblyInfoInputs.cache
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\opg5.16.AssemblyInfo.cs
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\opg5.16.csproj.CoreCompileInputs.cache
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\opg5.16.sourcelink.json
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\opg5.16.dll
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\refint\opg5.16.dll
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\opg5.16.pdb
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\opg5.16.genruntimeconfig.cache
+C:\Users\anton\oop\oop_intro\chapter5\opg5.16\obj\Debug\net10.0\ref\opg5.16.dll
