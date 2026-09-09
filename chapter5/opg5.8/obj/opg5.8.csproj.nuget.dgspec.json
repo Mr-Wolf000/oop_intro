@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gamer\\Desktop\\Hobbycode\\oop_intro\\chapter5\\opg5.8\\opg5.8.csproj": {}
+    "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.8\\opg5.8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gamer\\Desktop\\Hobbycode\\oop_intro\\chapter5\\opg5.8\\opg5.8.csproj": {
+    "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.8\\opg5.8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gamer\\Desktop\\Hobbycode\\oop_intro\\chapter5\\opg5.8\\opg5.8.csproj",
+        "projectUniqueName": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.8\\opg5.8.csproj",
         "projectName": "opg5.8",
-        "projectPath": "C:\\Users\\Gamer\\Desktop\\Hobbycode\\oop_intro\\chapter5\\opg5.8\\opg5.8.csproj",
-        "packagesPath": "C:\\Users\\Gamer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gamer\\Desktop\\Hobbycode\\oop_intro\\chapter5\\opg5.8\\obj\\",
+        "projectPath": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.8\\opg5.8.csproj",
+        "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anton\\oop\\oop_intro\\chapter5\\opg5.8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
