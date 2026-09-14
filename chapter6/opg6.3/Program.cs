@@ -1,4 +1,4 @@
-﻿int time = 21816000; // 21816000 is max and december 30th iin a 30 day pr month calender
+﻿int time = 21816000;
 double price = 599.95;
 int day_t = 24*60*60;
 int month_t = day_t*30;
