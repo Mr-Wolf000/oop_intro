@@ -1,9 +1,10 @@
-﻿Console.WriteLine("Hello world");
-/*
+﻿Navigation firstMove = Navigation.North;
+
+Console.WriteLine(firstMove);
+
 enum Navigation {
     North,
     South,
     West,
     East,
 };
-*/
