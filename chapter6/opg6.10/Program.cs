@@ -1,7 +1,7 @@
 ﻿bool isprime = true;
 for (int num=3; num<=1000000;num+=2){
     isprime = true;
-    for (int i = 2; i<num; i++) {
+    for (int i = 2; i*i<=num; i++) {
         if (num%i==0) {
             isprime = false;
             break;
@@ -11,7 +11,6 @@ for (int num=3; num<=1000000;num+=2){
         Console.WriteLine(num);
     }
 }
-Console.WriteLine(counter);
 /*
 for (int i=3; i<=1000000; i+=2) {
     isprime = true;
