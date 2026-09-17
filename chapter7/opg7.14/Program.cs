@@ -37,4 +37,31 @@ for (int x = 0 ; x<sodukuSolved[0].Length ; x++) {
     }
 }
 
-Console.WriteLine(validSolve);
+int grid = 3;
+
+// For loop that maked a new array box[] that holds the values of int's in each 3x3 grid
+for (int i = 0 ; i<=sodukuSolved.Length/grid-1 ; i++) { // desides the start row of box
+    for (int j = 0 ; j<=sodukuSolved.Length/grid-1 ; j++) { // desides the start collum of box
+        int[] box = new int[9];
+        int boxIndex = 0;
+        for (int x = 0 ; x<grid ; x++) { // row number in grid/box
+            for (int y = 0 ; y<grid ; y++) { // collum number in grid/box
+                box[boxIndex] = sodukuSolved[i*3+x][j*3+y];
+                boxIndex++;
+            }
+        }
+
+        // When the box of 3x3 as a 1D array of length 9 checks if there are any doublicates.
+        for (int a = 0 ; a < box.Length ; a++) {
+            for (int b = a+1 ; b < box.Length ; b++) {
+                if (box[a]==box[b]) {
+                    validSolve = false;
+                    Console.WriteLine("Box is invalid at box row: {0} collum: {1}", i, j);
+                    break;
+                }
+            }
+        }
+    }
+}
+
+Console.WriteLine("The soduku answer is: {0}", validSolve);
