@@ -1,5 +1,5 @@
 ﻿int[][] sodukuSolved = [
-    [5,3,4,6,7,8,9,1,2],
+    [5,3,4,6,7,8,9,1,2], 
     [6,7,2,1,9,5,3,4,8],
     [1,9,8,3,4,2,5,6,7],
     [8,5,9,7,6,1,4,2,3],
@@ -13,10 +13,10 @@
 bool validSolve = true;
 
 // checks the horisontal line
-foreach (int[] line in sodukuSolved) {
+foreach (int[] line in sodukuSolved) { 
     for (int i = 0 ; i<sodukuSolved.Length ; i++) {
         for (int j = i+1 ; j<sodukuSolved.Length ; j++) {
-            if (line[i]==line[j]) {
+            if (line[i]==line[j]) { // Case where the answer is invalid
                 validSolve = false;
                 Console.WriteLine("Solve is not valid on one of the horisontal lines");
                 break;
@@ -24,11 +24,11 @@ foreach (int[] line in sodukuSolved) {
         }
     }
 }
-
+// checks the vertical lines
 for (int x = 0 ; x<sodukuSolved[0].Length ; x++) {
     for (int y = 0 ; y<sodukuSolved.Length ; y++) {
         for (int z = y+1 ; z<sodukuSolved.Length ; z++) {
-            if (sodukuSolved[y][x]==sodukuSolved[z][x]) {
+            if (sodukuSolved[y][x]==sodukuSolved[z][x]) { // Case where the answer is invalid
                 validSolve = false;
                 Console.WriteLine("Solve is not valid on one of the vertical lines");
                 break;
@@ -39,10 +39,10 @@ for (int x = 0 ; x<sodukuSolved[0].Length ; x++) {
 
 int grid = 3;
 
-// For loop that maked a new array box[] that holds the values of int's in each 3x3 grid
-for (int i = 0 ; i<=sodukuSolved.Length/grid-1 ; i++) { // desides the start row of box
-    for (int j = 0 ; j<=sodukuSolved.Length/grid-1 ; j++) { // desides the start collum of box
-        int[] box = new int[9];
+// loop that makes a new array box[] that holds the values of int's in each 3x3 grid.
+for (int i = 0 ; i<sodukuSolved.Length/grid ; i++) { // desides the start row of box
+    for (int j = 0 ; j<sodukuSolved.Length/grid ; j++) { // desides the start collum of box
+        int[] box = new int[(grid*grid)]
         int boxIndex = 0;
         for (int x = 0 ; x<grid ; x++) { // row number in grid/box
             for (int y = 0 ; y<grid ; y++) { // collum number in grid/box
