@@ -1,25 +1,4 @@
-﻿// This number is the number that determens how presice we are.
-// With the way bits work for floats (e.g 101.1011 being 5+(1/2)+(1/8)+(1/16)) we know that a bit n after the the "." is of value 1/(2^n)
-// For what we are doing, its nice to only use number that we know the machine can reprecent nicely like 1/(2^16) (e.g 0.1 cant be reprecentet presicely)
-const double dexNum = 1D/65536D; // 65536 = 2^16
-
-// The function looks for the value that is closest to having i*i=n, by taking the number just before said number^2 before its greater than n
-double sqrt(double n) {
-    for (double i = 0 ; i<n ; i+=dexNum) {
-        if (i*i>n) {
-            return i-dexNum;
-        }
-    }
-    
-    // Case of no answer
-    Console.WriteLine("A error happend, and sqrt({0}) could not be found",n);
-    return -1;
-}
-Console.WriteLine(sqrt(2000));
-Console.WriteLine(exp(2,16));
-// The above implementation works, but its likely very slow, as it goes through the loop at a low increments, a way to improve this would be to go in larger and larger increments.
-// (e.g start out by the increment of 1/2, and when i^2 > n then go to increment of 1/4, then 1/8, 1/16 ... 1/2^16) this should mean overall less steps
-
+﻿// Calculates b^e for 0<e
 int exp(int b, int e) {
     int result = b;
     for (int i = 1; i<e ; i++) {
@@ -27,3 +6,24 @@ int exp(int b, int e) {
     }
     return result;
 }
+// With the way bits work for floats (e.g 101.1011 being 5+(1/2)+(1/8)+(1/16)) we know that a bit n after the the "." is of value 1/(2^n)
+// For what we are doing, its nice to only use number that we know the machine can reprecent nicely like 1/(2^16) (e.g 0.1 cant be reprecentet presicely in binary)
+
+double sqrt(double n) {
+    if (n<=0) return -1; //unvalid input
+    double result = 0;
+    double increment;
+    // This for loop determens bit we use for the check, e.g j=16 we look at the bit 16 after the . so the bit that represents 1/2^16
+    for (int j = 1; j<20 ; j++) {
+        increment = 1D/exp(2,j); // Makes a increment that is the size of the bit we are working with (1/2^j)
+        // When result^2 is not over n we can add the increment we are working with.
+        while (result*result<=n) {
+            result+=increment;
+        }
+        // Goes back to the value just before we went over, this ensures that the next increment will still have a impact
+        result-=increment;
+    } 
+    return result;
+}
+
+Console.WriteLine(sqrt(2000));
