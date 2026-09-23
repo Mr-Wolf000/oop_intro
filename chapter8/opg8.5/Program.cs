@@ -16,7 +16,7 @@ double sqrt(double n) {
     double result = 0;
     double increment;
     // This for loop determens bit we use for the check, e.g j=-16 we look at the bit 16 after the . so the bit that represents 1/2^16.
-    for (int j = 8; -20<j ; j--) {
+    for (int j = 8; -32<j ; j--) {
         increment = exp(2,j); // Makes a increment that is the size of the bit we are working with (1/2^j)
         // When result^2 is not over n we can add the increment we are working with.
         while (result*result<=n) {
@@ -28,4 +28,4 @@ double sqrt(double n) {
     return result;
 }
 
-Console.WriteLine(sqrt(2000));
+Console.WriteLine(sqrt(75000));
