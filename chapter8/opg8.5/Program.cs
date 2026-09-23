@@ -2,7 +2,7 @@
 double exp(double b, int e) {
     if (e<0) return 1D/exp(b,-e);
     if (e==0) return 1;
-    int result = b;
+    double result = b;
     for (int i = 1; i<e ; i++) {
         result*=b;
     }
@@ -12,12 +12,12 @@ double exp(double b, int e) {
 // For what we are doing, its nice to only use number that we know the machine can reprecent nicely like 1/(2^16) (e.g 0.1 cant be reprecentet presicely in binary)
 
 double sqrt(double n) {
-    if (n<=0) return -1; //unvalid input
+    if (n<=0) return -1; //guard for invalid input
     double result = 0;
     double increment;
-    // This for loop determens bit we use for the check, e.g j=16 we look at the bit 16 after the . so the bit that represents 1/2^16
-    for (int j = -8; j<20 ; j++) {
-        increment = 1D/exp(2,j); // Makes a increment that is the size of the bit we are working with (1/2^j)
+    // This for loop determens bit we use for the check, e.g j=16 we look at the bit 16 after the . so the bit that represents 1/2^16.
+    for (int j = 8; -20<j ; j--) {
+        increment = exp(2,j); // Makes a increment that is the size of the bit we are working with (1/2^j)
         // When result^2 is not over n we can add the increment we are working with.
         while (result*result<=n) {
             result+=increment;
