@@ -1,5 +1,7 @@
-﻿// Calculates b^e for 0<e
-int exp(int b, int e) {
+﻿// Calculates b^e
+double exp(double b, int e) {
+    if (e<0) return 1D/exp(b,-e);
+    if (e==0) return 1;
     int result = b;
     for (int i = 1; i<e ; i++) {
         result*=b;
@@ -14,7 +16,7 @@ double sqrt(double n) {
     double result = 0;
     double increment;
     // This for loop determens bit we use for the check, e.g j=16 we look at the bit 16 after the . so the bit that represents 1/2^16
-    for (int j = 1; j<20 ; j++) {
+    for (int j = -8; j<20 ; j++) {
         increment = 1D/exp(2,j); // Makes a increment that is the size of the bit we are working with (1/2^j)
         // When result^2 is not over n we can add the increment we are working with.
         while (result*result<=n) {
