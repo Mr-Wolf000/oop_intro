@@ -1,6 +1,41 @@
 ﻿Customer aCustomer = new Customer("Magnus", 1, 5000);
 aCustomer.Withdraw(100);
-Console.WriteLine(aCustomer.GetBalance());
+// Console.WriteLine(aCustomer.GetBalance());
+CustomerDatabase a = new CustomerDatabase();
+a.AddCustomer(aCustomer);
+Console.WriteLine(a.customers[0].GetBalance());
+a.IdDel(1);
+Console.WriteLine(a.customers[0]);
+
+
+
+public class CustomerDatabase {
+    public Customer[] customers;
+    
+    public CustomerDatabase() {
+        customers = new Customer[10];
+    }
+
+    public void AddCustomer(Customer customerInput) {
+        for (int i = 0 ; i<customers.Length ; i++) {
+            if (customers[i] == null) {
+                customers[i] = customerInput;
+                break;
+            }
+        }
+    }
+    public void IdDel(int IdInput) {
+        for (int i = 0; i<customers.Length;i++) {
+            if (customers[i]?.id == IdInput) {
+                customers[i] = null;
+            }
+        }
+    }
+    public void Data() {
+
+    }
+}
+
 
 public class Customer {
     public string name;

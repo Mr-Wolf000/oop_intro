@@ -42,7 +42,7 @@ int grid = 3;
 // loop that makes a new array box[] that holds the values of int's in each 3x3 grid.
 for (int i = 0 ; i<sodukuSolved.Length/grid ; i++) { // desides the start row of box
     for (int j = 0 ; j<sodukuSolved.Length/grid ; j++) { // desides the start collum of box
-        int[] box = new int[(grid*grid)]
+        int[] box = new int[(grid*grid)];
         int boxIndex = 0;
         for (int x = 0 ; x<grid ; x++) { // row number in grid/box
             for (int y = 0 ; y<grid ; y++) { // collum number in grid/box

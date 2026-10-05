@@ -10,7 +10,6 @@ double exp(double b, int e) {
 }
 // With the way bits work for floats (e.g 101.1011 being 5+(1/2)+(1/8)+(1/16)) we know that a bit n after the the "." is of value 1/(2^n)
 // For what we are doing, its nice to only use number that we know the machine can reprecent nicely like 1/(2^16) (e.g 0.1 cant be reprecentet presicely in binary)
-
 double sqrt(double n) {
     if (n<=0) return -1; //guard for invalid input
     double result = 0;
@@ -28,4 +27,4 @@ double sqrt(double n) {
     return result;
 }
 
-Console.WriteLine(sqrt(75000));
+Console.WriteLine(sqrt(256));
