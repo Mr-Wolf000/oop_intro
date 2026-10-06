@@ -26,13 +26,10 @@ public class CustomerDatabase {
     }
     public void IdDel(int IdInput) {
         for (int i = 0; i<customers.Length;i++) {
-            if (customers[i]?.id == IdInput) {
+            if (customers[i]?.id == IdInput && customers[i] != null) {
                 customers[i] = null;
             }
         }
-    }
-    public void Data() {
-
     }
 }
 
