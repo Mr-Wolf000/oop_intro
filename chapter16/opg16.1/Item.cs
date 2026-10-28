@@ -1,4 +1,4 @@
-public class Item {
+public abstract class Item : IExpireable {
     public string name;
     public double price;
 
@@ -18,4 +18,5 @@ public class Item {
     public override string ToString() {
         return ("Name: "+name+"\nPrice: "+price);
     }
+    public abstract bool IsExpired();
 }

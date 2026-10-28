@@ -1,0 +1,3 @@
+interface IExpireable {
+    bool IsExpired();
+}

@@ -16,4 +16,7 @@ public class NonFoodItem : Item {
     public NonFoodItem(string nameInput, double priceInput, string[] materialsInput) : base(nameInput, priceInput) {
         materials = materialsInput;
     }
+    public override bool IsExpired() {
+        return(false);
+    }
 }

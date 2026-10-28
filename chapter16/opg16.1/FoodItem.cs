@@ -10,4 +10,7 @@ public class FoodItem : Item {
     public int GetExpiresAt() {
         return expiresAt;
     }
+    public override bool IsExpired() {
+        return(true);
+    }
 }
