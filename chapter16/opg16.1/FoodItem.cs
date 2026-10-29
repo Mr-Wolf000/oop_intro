@@ -1,16 +1,20 @@
 public class FoodItem : Item {
-    int expiresAt;
+    DateTime expiresAt;
     
-    public FoodItem(string nameInput, double priceInput, int expiresAtInput) : base(nameInput, priceInput) {
+    public FoodItem(string nameInput, double priceInput, DateTime expiresAtInput) : base(nameInput, priceInput) {
         expiresAt = expiresAtInput;
     }
     public override string ToString() {
         return (base.ToString()+"\nExpires at: "+expiresAt);
     }
-    public int GetExpiresAt() {
+    public DateTime GetExpiresAt() {
         return expiresAt;
     }
     public override bool IsExpired() {
-        return(true);
+    if (DateTime.Now > expiresAt) {
+        return true;
+    } else {
+        return false;
+    }
     }
 }
