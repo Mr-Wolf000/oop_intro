@@ -1,8 +1,11 @@
 ﻿class Program {
     public static void Main(string[] args) {
         Test<int> something = new Test<int>();
-        Console.WriteLine(something);
         something.Append(6);
+        something.Append(6327);
+        something.Append(67);
+        something.Remove(1);
+        something.Insert(1, 999);
         Console.WriteLine(something);
     }
 }
@@ -17,18 +20,27 @@ class Test<T> : IDynArray<T> {
         count++;
     }
     public void Insert (int i, T element) { // Not working
-        array[i] = element;
+        count++;
+        T[] temp = new T[limit];
+        for (int j = 0 ; j<i ; j++) {
+            temp[j] = array[j];
+        }
+        temp[i] = element;
+        for (int j = i+1 ; j<limit ; j++) {
+            temp[j] = array [j-1];
+        }
+        array = temp;
     }
      public void Remove (int i) {
          T[] temp = new T[limit];
-         for (int j = 0 ; j<count ; j++) {
-             if (j==i) {
-                 continue;
-             } else {
-                 temp[j]=array[j];
-             }
+         for (int j = 0 ; j<i ; j++) {
+             temp[j]=array[j];
+         }
+         for (int j = i+1 ; j<limit ; j++) {
+             temp[j-1] = array[j]; 
          }
          array = temp;
+         count--;
      }
     public void Set (int i, T element) {
         array[i] = element;
