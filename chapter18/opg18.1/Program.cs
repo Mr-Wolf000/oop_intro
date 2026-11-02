@@ -2,24 +2,40 @@
     public static void Main(string[] args) {
         Test<int> something = new Test<int>();
         something.Append(6);
-        something.Append(6327);
         something.Append(67);
         something.Remove(1);
         something.Insert(1, 999);
+        something.Insert(1, 5);
         Console.WriteLine(something);
     }
 }
 
 class Test<T> : IDynArray<T> {
-    T[] array = new T[20];
+    T[] array = new T[1];
     int count = 0;
-    int limit = 20;
+    int limit = 1;
     
     public void Append(T element) {
+        if (count+1 > limit) {
+            limit*=2;
+            T[] temp = new T[limit];
+            for (int i = 0 ; i<limit/2 ; i++) {
+                temp[i]=array[i];
+            }
+            array = temp;
+        }
         array[count] = element;
         count++;
     }
-    public void Insert (int i, T element) { // Not working
+    public void Insert (int i, T element) {
+        if (count+1 > limit) {
+            limit*=2;
+            T[] temp1 = new T[limit];
+            for (int j = 0 ; j<limit/2 ; j++) {
+                temp1[j]=array[j];
+            }
+            array = temp1;
+        }
         count++;
         T[] temp = new T[limit];
         for (int j = 0 ; j<i ; j++) {
@@ -41,6 +57,13 @@ class Test<T> : IDynArray<T> {
          }
          array = temp;
          count--;
+         if (count>limit/2) {
+             T[] temp1 = new T[limit/2];
+             for (int j = 0 ; j<limit/2 ; j++) {
+                 temp1[j] = array[j];
+             }
+             array = temp;
+         }
      }
     public void Set (int i, T element) {
         array[i] = element;
