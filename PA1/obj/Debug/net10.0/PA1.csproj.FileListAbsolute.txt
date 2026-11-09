@@ -1,0 +1,15 @@
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\PA1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\PA1.AssemblyInfoInputs.cache
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\PA1.AssemblyInfo.cs
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\PA1.csproj.CoreCompileInputs.cache
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\PA1.sourcelink.json
+C:\Users\anton\oop\oop_intro\PA1\bin\Debug\net10.0\PA1.exe
+C:\Users\anton\oop\oop_intro\PA1\bin\Debug\net10.0\PA1.deps.json
+C:\Users\anton\oop\oop_intro\PA1\bin\Debug\net10.0\PA1.runtimeconfig.json
+C:\Users\anton\oop\oop_intro\PA1\bin\Debug\net10.0\PA1.dll
+C:\Users\anton\oop\oop_intro\PA1\bin\Debug\net10.0\PA1.pdb
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\PA1.dll
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\refint\PA1.dll
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\PA1.pdb
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\PA1.genruntimeconfig.cache
+C:\Users\anton\oop\oop_intro\PA1\obj\Debug\net10.0\ref\PA1.dll

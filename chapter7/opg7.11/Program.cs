@@ -26,6 +26,4 @@ string print(bool[] bs) {
     }
     return display;
 }
-
-// test case for the first 50 prime numbers
 Console.WriteLine(print(Prime(1000000)));
